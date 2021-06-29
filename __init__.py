@@ -16,7 +16,7 @@ def remove(course_name):
         course.remove(course[removed])
         return(course)
 
-def check_course_done():
+def check_attempted_course():
     for i in range(0,len(course)):
         return(course[i][0])
 
@@ -65,8 +65,8 @@ def docs():
     print()
     print("======================================")
     print()
-    print("check_course_done()")
-    print("This method is to check courses inputted.")
+    print("check_attempted_course()")
+    print("This method is to check courses attempted which were inputted.")
     print()
     print("======================================")
     print()
