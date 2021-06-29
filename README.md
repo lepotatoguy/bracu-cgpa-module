@@ -2,6 +2,10 @@
 
 BracU CGPA Module is a Python library for easier calculation of CGPA in BRACU.
 
+Developed by Joyanta J. Mondal from BracU (c) 2021
+
+Email: hello@joyantamondal.com
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install cgpa_bracu.

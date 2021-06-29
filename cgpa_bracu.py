@@ -82,14 +82,5 @@ def docs():
     print()
     print("======================================")
 
-
-add("ACT201", 1, 3)
-add("CSE221", 2.7, 3)
-add("CSE260", 2, 3)
-add("MAT120", 0, 3)
-remove("ACT201")
-#check_course_done()
-# credits_completed()
-get_cgpa()
     
 
