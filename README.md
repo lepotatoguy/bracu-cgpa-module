@@ -19,7 +19,7 @@ add("CSE110", 4, 3) #adding courses
 add("CSE111", 3.7, 3) #adding courses
 add("CSE220", 3.3, 3) #adding courses
 add("MAT215", 0, 3) #adding courses
-remove("ACT201") #adding courses
+remove("CSE220") #adding courses
 check_course_done() #returns list of courses inputted.
 credits_completed() #returns number of credits completed.
 get_cgpa() #returns CGPA
