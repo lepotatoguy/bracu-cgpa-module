@@ -9,16 +9,16 @@ classifiers = [
 ]
  
 setup(
-  name='joshbasiccalculator',
+  name='cgpa_calc_bracu',
   version='0.0.1',
-  description='A very basic calculator',
+  description='A CGPA calculator for BracU Students',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='',  
-  author='Joshua Lowe',
-  author_email='josh@edublocks.org',
+  author='Joyanta J. Mondal',
+  author_email='hello@joyantamondal.com',
   license='MIT', 
   classifiers=classifiers,
-  keywords='calculator', 
+  keywords='bracu cgpa calculator',
   packages=find_packages(),
   install_requires=[''] 
 )
