@@ -1,6 +1,0 @@
-README.md
-setup.py
-src/bracucgpacalc.egg-info/PKG-INFO
-src/bracucgpacalc.egg-info/SOURCES.txt
-src/bracucgpacalc.egg-info/dependency_links.txt
-src/bracucgpacalc.egg-info/top_level.txt
