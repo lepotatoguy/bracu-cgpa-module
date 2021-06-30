@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
     long_desc = fh.read()
 
 setuptools.setup(
-    name="bracu_calc_cgpa",
-    version="0.0.1",
+    name="bracucgpacalc",
+    version="1.0.0",
     author="Joyanta J. Mondal",
     author_email="hello@joyantamondal.com",
     description="A CGPA calculator module made for BracU Students.",

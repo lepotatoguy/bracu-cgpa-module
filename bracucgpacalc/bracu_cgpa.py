@@ -21,14 +21,14 @@ def check_attempted_course():
 
 def get_cgpa():
     weighted_cg = 0
-    creds = credits_completed()
+    creds = credits_attempted()
     cg = 0
     for i in range(0,len(course)):
         weighted_cg = weighted_cg + (course[i][1] * course[i][2])
     cg = cg + (weighted_cg / creds)
     return cg
 
-def credits_completed():
+def credits_attempted():
     creds = 0
     for i in range(0,len(course)):
         creds = creds + course[i][2]
@@ -38,11 +38,14 @@ def readme():
     print("======================================")
     print("Welcome to BracU CGPA Calculator.")
     print("This module is created for easy CGPA calculation for BracU Students.")
-    print("To get started, run cgpa_calc_bracu.docs()")
+    print("To get started, run bracu_calc_cgpa.docs()")
     print("======================================")
     print()
     print("Created by Joyanta J. Mondal")
     print("Email: hello@joyantamondal.com")
+    print()
+    print("======================================")
+
 
 def docs():
     print()
@@ -75,11 +78,15 @@ def docs():
     print()
     print("======================================")
     print()
-    print("credits_completed()")
-    print("Credits Completed:")
-    print("This method is to check amount of credits completed.")
+    print("credits_attempted()")
+    print("Credits Attempted:")
+    print("This method is to check amount of credits attempted.")
     print()
     print("======================================")
+    print()
+    print("I have tried to implement all the functionalities, it might have some bugs also. Please ignore that or please contact me email to notify me about the bug. I will try to give proper credits to that too.")
+    print()
+    print("Email: hello@joyantamondal.com")
 
     
 

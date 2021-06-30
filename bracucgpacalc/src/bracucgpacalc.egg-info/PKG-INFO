@@ -1,55 +1,60 @@
 Metadata-Version: 2.1
-Name: bracu-calc-cgpa
-Version: 0.0.1
+Name: bracucgpacalc
+Version: 1.0.0
 Summary: A CGPA calculator module made for BracU Students.
 Home-page: https://github.com/lepotatoguy/bracu-cgpa-module
 Author: Joyanta J. Mondal
 Author-email: hello@joyantamondal.com
 License: UNKNOWN
-Description: # BracU CGPA Module
+Description: # BracU CGPA Calculator Module
         
         [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) 
         
-        BracU CGPA Module is a Python library for easier calculation of CGPA in BRACU.
+        BracU CGPA Module is a Python library for easier calculation of CGPA in [Brac University](https://www.bracu.ac.bd/). 
         
-        Developed by Joyanta J. Mondal from BracU (C) 2021
+        Developed by [Joyanta J. Mondal](https://github.com/lepotatoguy) from BracU (C) 2021
         
         Email: hello@joyantamondal.com
         
-        ## Functionality of the module
+        ## Functionality:
         
         - Adding Courses
         - Removing Courses
         - Checking Courses Attempted 
         - Get CGPA
-        - Number of Credits Completed
+        - Number of Credits Attempted
         
         
         ## Installation
         
-        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install bracu_calc_cgpa.
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install bracucgpacalc.
         
-        ```bash
-        pip install bracu_calc_cgpa
         ```
+        pip install bracucgpacalc
+        ```
+        Or,
+        
+        
         
         ## Usage
         
         ```python
-        from bracu_calc_cgpa import *
+        from bracucgpacalc import *
         
         add("CSE110", 4, 3) #adding courses
         add("CSE111", 3.7, 3) #adding courses
         add("CSE220", 3.3, 3) #adding courses
         add("MAT215", 0, 3) #adding courses
-        remove("CSE220") #adding courses
+        remove("CSE220") #removing courses
         check_attempted_course() #returns list of courses attempted.
-        credits_completed() #returns number of credits completed.
+        credits_attempted() #returns number of credits completed.
         get_cgpa() #returns CGPA
+        readme() #prints out readme
+        docs() #prints out documentation
         
         ```
         ## Note 
-        - I have tried to implement all the functionalities, it might have some bugs also. Ignore that or please contact me email to notify me about the bug. I will try to give proper credits to that too. 
+        - I have tried to implement all the functionalities, it might have some bugs also. Please ignore that or please contact me email to notify me about the bug. I will try to give proper credits to that too. 
         
         ## License
         [MIT](https://choosealicense.com/licenses/mit/)
