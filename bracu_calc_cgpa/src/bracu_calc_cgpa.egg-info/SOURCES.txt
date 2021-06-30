@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/bracu_calc_cgpa.egg-info/PKG-INFO
+src/bracu_calc_cgpa.egg-info/SOURCES.txt
+src/bracu_calc_cgpa.egg-info/dependency_links.txt
+src/bracu_calc_cgpa.egg-info/top_level.txt

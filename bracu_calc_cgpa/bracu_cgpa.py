@@ -5,7 +5,6 @@ def add(course_name, course_cgpa, course_credits):
 
 def remove(course_name):
     removed = -1
-    print(course)
     for i in range(0,len(course)):
         if course_name in course[i][0]:
             removed = course[i].index(course_name)
@@ -39,7 +38,7 @@ def readme():
     print("======================================")
     print("Welcome to BracU CGPA Calculator.")
     print("This module is created for easy CGPA calculation for BracU Students.")
-    print("To get started, run cgpa_bracu.docs()")
+    print("To get started, run cgpa_calc_bracu.docs()")
     print("======================================")
     print()
     print("Created by Joyanta J. Mondal")

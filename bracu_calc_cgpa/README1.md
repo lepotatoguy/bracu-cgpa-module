@@ -8,16 +8,16 @@ Email: hello@joyantamondal.com
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install cgpa_bracu.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install cgpa_calc_bracu.
 
 ```bash
-pip install cgpa_bracu
+pip install cgpa_calc_bracu
 ```
 
 ## Usage
 
 ```python
-import cgpa_bracu
+import cgpa_calc_bracu
 
 add("CSE110", 4, 3) #adding courses
 add("CSE111", 3.7, 3) #adding courses

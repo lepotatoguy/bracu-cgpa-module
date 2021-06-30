@@ -1,9 +1,0 @@
-Change Log
-=============
-
-0.0.1 (29/06/2021)
-- Inititated
-- Add Courses Added
-- Remove Courses Added
-- Checking Attempted Credits Added
-- Checking CGPA Added
