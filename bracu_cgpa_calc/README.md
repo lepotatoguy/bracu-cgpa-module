@@ -8,6 +8,8 @@ Developed by [Joyanta J. Mondal](https://github.com/lepotatoguy) from BracU (C) 
 
 Email: hello@joyantamondal.com
 
+
+
 ## Functionality:
 
 - Adding Courses
@@ -15,6 +17,11 @@ Email: hello@joyantamondal.com
 - Checking Courses Attempted 
 - Get CGPA
 - Number of Credits Attempted
+- Read from PC
+- Save to PC
+
+- Read from PC
+[![Template of Excel File (Read from PC)](https://i.ibb.co/Kr66bSc/getfrompc.png)]
 
 
 ## Installation
@@ -45,7 +52,22 @@ docs() #prints out documentation
 
 ```
 ## Note 
-- I have tried to implement all the functionalities, it might have some bugs also. Please ignore that or please contact me email to notify me about the bug. I will try to give proper credits to that too. 
+- I have tried to implement all the functionalities, it might have some bugs also. Please ignore that or please contact me email to notify me about the bug. I will try to give proper credits to that too. And you are welcome to give your valuable opinion and suggestions.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## CHANGELOG:
+
+1.0.1:
+- Fixed: Removing Courses: Wrong course was getting removed.
+- Fixed: Checking Courses Attempted: It was showing random course instead of a list.
+
+1.0.0:
+
+- Adding Courses
+- Removing Courses
+- Checking Courses Attempted 
+- Get CGPA
+- Number of Credits Attempted

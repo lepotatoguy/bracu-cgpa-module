@@ -20,6 +20,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    py_modules=['bracu_cgpa_calc'],
     python_requires=">=3.0",
 )
