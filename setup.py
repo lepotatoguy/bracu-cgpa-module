@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bracu_cgpa_calc",
-    version="1.0.1",
+    version="1.0.2",
     author="Joyanta J. Mondal",
     author_email="hello@joyantamondal.com",
     description="A CGPA calculator module made for BracU Students.",
@@ -21,5 +21,6 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     py_modules=['bracu_cgpa_calc'],
+    install_requires=['XlsxWriter','pandas'], 
     python_requires=">=3.0",
 )

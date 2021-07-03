@@ -4,4 +4,5 @@ src/bracu_cgpa_calc.py
 src/bracu_cgpa_calc.egg-info/PKG-INFO
 src/bracu_cgpa_calc.egg-info/SOURCES.txt
 src/bracu_cgpa_calc.egg-info/dependency_links.txt
+src/bracu_cgpa_calc.egg-info/requires.txt
 src/bracu_cgpa_calc.egg-info/top_level.txt

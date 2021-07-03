@@ -8,8 +8,6 @@ Developed by [Joyanta J. Mondal](https://github.com/lepotatoguy) from BracU (C) 
 
 Email: hello@joyantamondal.com
 
-
-
 ## Functionality:
 
 - Adding Courses
@@ -18,12 +16,10 @@ Email: hello@joyantamondal.com
 - Get CGPA
 - Number of Credits Attempted
 - Read from PC
-- Save to PC
+- Save from PC
 
-
-- Read from PC
+- Template of Excel File (Read from PC)
 ![Template of Excel File (Read from PC)](https://i.postimg.cc/1R7q78nt/getfrompc.png)
-
 
 ## Installation
 
@@ -50,6 +46,8 @@ credits_attempted() #returns number of credits completed.
 get_cgpa() #returns CGPA
 readme() #prints out readme
 docs() #prints out documentation
+save_to_pc()
+read_from_pc("CGPA.xlsx")
 
 ```
 ## Note 
@@ -60,6 +58,10 @@ docs() #prints out documentation
 
 
 ## CHANGELOG:
+
+1.0.2:
+- Added: Save to PC.
+- Added: Read from PC.
 
 1.0.1:
 - Fixed: Removing Courses: Wrong course was getting removed.
