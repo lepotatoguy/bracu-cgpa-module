@@ -22,7 +22,7 @@ Email: hello@joyantamondal.com
 
 
 - Read from PC
-![Template of Excel File (Read from PC)](https://i.ibb.co/Kr66bSc/getfrompc.png)
+![Template of Excel File (Read from PC)](https://i.postimg.cc/1R7q78nt/getfrompc.png)
 
 
 ## Installation
