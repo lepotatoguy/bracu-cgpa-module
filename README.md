@@ -8,6 +8,8 @@ Developed by [Joyanta J. Mondal](https://github.com/lepotatoguy) from BracU (C) 
 
 Email: hello@joyantamondal.com
 
+
+
 ## Functionality:
 
 - Adding Courses
@@ -15,6 +17,12 @@ Email: hello@joyantamondal.com
 - Checking Courses Attempted 
 - Get CGPA
 - Number of Credits Attempted
+- Read from PC
+- Save to PC
+
+
+- Read from PC
+[![Template of Excel File (Read from PC)](https://i.ibb.co/Kr66bSc/getfrompc.png)]
 
 
 ## Installation
