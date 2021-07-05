@@ -67,7 +67,11 @@ def read_from_pc(file_path):
     file = pd.read_excel(file_path)
     for item in range(0, len(file.Course)-1):
         add(file['Course'][item], file['GPA'][item], file['Credits'][item])
-    cg = file['GPA'][len(file.Course)-1]
+    test = file['Course'][len(file.Course)-1]
+    if "cgpa" not in test.lower():
+        cg = get_cgpa()
+    else:
+        cg = file['GPA'][len(file.Course)-1]
 
 
 def readme():
@@ -134,7 +138,11 @@ This method is to save to PC as a excel file (xlsx).
 
 read_from_pc(file_path)
 Read from PC:
-This method is to save to PC as a excel file (xlsx).
+This method is to read excel file (xlsx) from pc. 
+There is one parameter to pass. file_path (str)
+Template File: https://github.com/lepotatoguy/bracu-cgpa-module/blob/main/CGPA.xlsx
+Add your course according to your wish like the pattern.
+Template Picture: https://i.postimg.cc/1R7q78nt/getfrompc.png
 
 ======================================
 

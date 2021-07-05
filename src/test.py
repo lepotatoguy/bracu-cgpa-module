@@ -5,11 +5,11 @@ from bracu_cgpa_calc import *
 # add("MAT215", 0, 3) #adding courses
 # remove("CSE220") #removing courses
 #print(check_attempted_course())
-#print(get_cgpa())
+#print(get_cgpa())  
 # readme()
 # docs()
-print(read_from_pc("CGPA.xlsx"))
-save_to_pc()
+print(read_from_storage("https://github.com/lepotatoguy/bracu-cgpa-module/blob/main/CGPA.xlsx"))
+save_to_storage()
 
 # item=1
 

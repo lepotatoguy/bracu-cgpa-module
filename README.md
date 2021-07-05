@@ -16,7 +16,7 @@ Email: hello@joyantamondal.com
 - Get CGPA
 - Number of Credits Attempted
 - Read from PC
-- Save from PC
+- Save to PC/GOogle Colab
 
 - Template of Excel File (Read from PC)
 ![Template of Excel File (Read from PC)](https://i.postimg.cc/1R7q78nt/getfrompc.png)
@@ -46,9 +46,8 @@ credits_attempted() #returns number of credits completed.
 get_cgpa() #returns CGPA
 readme() #prints out readme
 docs() #prints out documentation
-save_to_pc()
+save_to_pc() #Works in Google Colab too. 
 read_from_pc("CGPA.xlsx")
-
 ```
 ## Note 
 - I have tried to implement all the functionalities, it might have some bugs also. Please ignore that or please contact me email to notify me about the bug. I will try to give proper credits to that too. And you are welcome to give your valuable opinion and suggestions.
