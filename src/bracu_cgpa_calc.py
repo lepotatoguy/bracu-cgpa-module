@@ -73,6 +73,10 @@ def read_from_storage(file_path):
     else:
         cg = file['GPA'][len(file.Course)-1]
 
+def flush():
+    course.clear()
+    cg = 0
+
 
 def readme():
     print('''
@@ -143,6 +147,14 @@ There is one parameter to pass. file_path (str)
 Template File: https://github.com/lepotatoguy/bracu-cgpa-module/blob/main/CGPA.xlsx
 Add your course according to your wish like the pattern.
 Template Picture: https://i.postimg.cc/1R7q78nt/getfrompc.png
+
+======================================
+
+======================================
+
+flush()
+Flush:
+This method is to flush all the data of course list and CGPA. 
 
 ======================================
 

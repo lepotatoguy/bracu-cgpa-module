@@ -44,7 +44,7 @@ def credits_attempted():
         creds = creds + course[i][2]
     return(creds)
 
-def save_to_pc():
+def save_to_storage():
     workbook = xlsxwriter.Workbook("CGPA.xlsx")
     outSheet = workbook.add_worksheet()
     
@@ -63,7 +63,7 @@ def save_to_pc():
 
     workbook.close()
 
-def read_from_pc(file_path):
+def read_from_storage(file_path):
     file = pd.read_excel(file_path)
     for item in range(0, len(file.Course)-1):
         add(file['Course'][item], file['GPA'][item], file['Credits'][item])
@@ -72,6 +72,10 @@ def read_from_pc(file_path):
         cg = get_cgpa()
     else:
         cg = file['GPA'][len(file.Course)-1]
+
+def flush():
+    course.clear()
+    cg = 0
 
 
 def readme():
@@ -128,21 +132,29 @@ This method is to check amount of credits attempted.
 
 ======================================
 
-save_to_pc()
-Save to PC:
-This method is to save to PC as a excel file (xlsx).
+save_to_storage()
+Save to Storage:
+This method is to save to PC/Google Colab as a excel file (xlsx).
 
 ======================================
 
 ======================================
 
-read_from_pc(file_path)
-Read from PC:
-This method is to read excel file (xlsx) from pc. 
+read_from_storage(file_path)
+Read from Storage:
+This method is to read excel file (xlsx) from PC/Google Colab. 
 There is one parameter to pass. file_path (str)
 Template File: https://github.com/lepotatoguy/bracu-cgpa-module/blob/main/CGPA.xlsx
 Add your course according to your wish like the pattern.
 Template Picture: https://i.postimg.cc/1R7q78nt/getfrompc.png
+
+======================================
+
+======================================
+
+flush()
+Flush:
+This method is to flush all the data of course list and CGPA. 
 
 ======================================
 

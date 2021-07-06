@@ -15,8 +15,8 @@ Email: hello@joyantamondal.com
 - Checking Courses Attempted 
 - Get CGPA
 - Number of Credits Attempted
-- Read from PC
-- Save to PC/GOogle Colab
+- Read from Device (PC/Google Colab)
+- Save to Device (PC/Google Colab)
 
 - Template of Excel File (Read from PC)
 ![Template of Excel File (Read from PC)](https://i.postimg.cc/1R7q78nt/getfrompc.png)
@@ -35,19 +35,22 @@ pip install bracu_cgpa_calc
 
 ```python
 from bracu_cgpa_calc import *
+#import bracu_cgpa_calc as bcc #this is another alternative
 
 add("CSE110", 4, 3) #adding courses
 add("CSE111", 3.7, 3) #adding courses
 add("CSE220", 3.3, 3) #adding courses
 add("MAT215", 0, 3) #adding courses
+#bcc.add("MAT215", 0, 3) #adding courses using alternative import
 remove("CSE220") #removing courses
 check_attempted_course() #returns list of courses attempted.
 credits_attempted() #returns number of credits completed.
 get_cgpa() #returns CGPA
 readme() #prints out readme
 docs() #prints out documentation
-save_to_pc() #Works in Google Colab too. 
+save_to_pc() 
 read_from_pc("CGPA.xlsx")
+flush()
 ```
 ## Note 
 - I have tried to implement all the functionalities, it might have some bugs also. Please ignore that or please contact me email to notify me about the bug. I will try to give proper credits to that too. And you are welcome to give your valuable opinion and suggestions.
@@ -59,8 +62,11 @@ read_from_pc("CGPA.xlsx")
 ## CHANGELOG:
 
 1.0.2:
-- Added: Save to PC.
-- Added: Read from PC.
+- Added: Flush.
+
+1.0.2:
+- Added: Save to Device. (tested on PC and Google Colab)
+- Added: Read from Device. (tested on PC and Google Colab)
 
 1.0.1:
 - Fixed: Removing Courses: Wrong course was getting removed.
