@@ -1,15 +1,17 @@
 from bracu_cgpa_calc import *
-# add("CSE110", 4, 3) #adding courses
-# add("CSE111", 3.7, 3) #adding courses
-# add("CSE220", 3.3, 3) #adding courses
-# add("MAT215", 0, 3) #adding courses
+add("CSE110", 4, 3) #adding courses
+add("CSE111", 3.7, 3) #adding courses
+add("CSE220", 3.3, 3) #adding courses
+add("MAT215", 0, 3) #adding courses
 # remove("CSE220") #removing courses
 #print(check_attempted_course())
+print(check_completed_course())
+print(check_retake_course())
 #print(get_cgpa())  
 # readme()
 # docs()
-print(read_from_storage("https://github.com/lepotatoguy/bracu-cgpa-module/blob/main/CGPA.xlsx"))
-save_to_storage()
+# print(read_from_storage("https://github.com/lepotatoguy/bracu-cgpa-module/blob/main/CGPA.xlsx"))
+# save_to_storage()
 
 # item=1
 

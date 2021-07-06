@@ -1,8 +1,17 @@
 import xlsxwriter
 import pandas as pd
 
+
+#Global Variables
 course = []
 cg = 0
+courselist = []
+list_of_attempted_courses = []
+list_of_completed_courses = []
+list_of_retake_courses = []
+weighted_cg = 0
+creds_attempted = 0
+creds_completed = 0
 
 def add(course_name, course_cgpa, course_credits):
     course.append([course_name, course_cgpa, course_credits])
@@ -24,10 +33,24 @@ def remove(course_name):
         return(course)
 
 def check_attempted_course():
-    list_of_courses = []
+    list_of_attempted_courses = []
     for i in range(0,len(course)):
-        list_of_courses.append(course[i][0])
-    return(list_of_courses)
+        list_of_attempted_courses.append(course[i][0])
+    return(list_of_attempted_courses)
+
+def check_completed_course():
+    list_of_completed_courses = []
+    for i in range(0,len(course)):
+        if(course[i][1]>0):
+            list_of_completed_courses.append(course[i][0])
+    return(list_of_completed_courses)
+
+def check_retake_course():
+    list_of_retake_courses = []
+    for i in range(0,len(course)):
+        if(course[i][1]==0):
+            list_of_retake_courses.append(course[i][0])
+    return(list_of_retake_courses)
 
 def get_cgpa():
     weighted_cg = 0
@@ -39,10 +62,17 @@ def get_cgpa():
     return(cg)
 
 def credits_attempted():
-    creds = 0
+    creds_attempted = 0
     for i in range(0,len(course)):
-        creds = creds + course[i][2]
-    return(creds)
+        creds_attempted = creds_attempted + course[i][2]
+    return(creds_attempted)
+
+def credits_completed():
+    creds_completed = 0
+    for i in range(0,len(course)):
+        if(course[i][1]>0):
+            creds_completed = creds_completed + course[i][2]
+    return(creds_completed)
 
 def save_to_storage():
     workbook = xlsxwriter.Workbook("CGPA.xlsx")
@@ -76,6 +106,12 @@ def read_from_storage(file_path):
 def flush():
     course.clear()
     cg = 0
+    courselist.clear()
+    list_of_completed_courses.clear()
+    list_of_attempted_courses.clear()
+    weighted_cg = 0
+    creds_attempted = 0
+    creds_completed = 0
 
 
 def readme():
@@ -113,8 +149,27 @@ There is one parameter to pass. Course Code (str)
 ======================================
 
 check_attempted_course()
+Check Attempted Course:
 This method is to check courses attempted which were inputted.
 It will return list of courses.
+
+======================================
+
+check_completed_course():
+Check Completed Course:
+This method is to check courses completed among which were inputted.
+It will return list of courses.
+
+======================================
+
+======================================
+
+check_retake_course():
+Check Retake Course:
+This method is to check courses that needs retake among which were inputted.
+It will return list of courses.
+
+======================================
 
 ======================================
 
@@ -128,7 +183,15 @@ credits_attempted()
 Credits Attempted:
 This method is to check amount of credits attempted.
 
+====================================== 
+
 ======================================
+
+credits_completed()
+Credits Completed:
+This method is to check amount of credits completed.
+
+====================================== 
 
 ======================================
 
@@ -154,7 +217,8 @@ Template Picture: https://i.postimg.cc/1R7q78nt/getfrompc.png
 
 flush()
 Flush:
-This method is to flush all the data of course list and CGPA. 
+This method is to flush all the data of course list and CGPA.
+It is mainly used to remove all data from code for privacy. 
 
 ======================================
 
