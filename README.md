@@ -63,7 +63,7 @@ flush()
 
 ## CHANGELOG:
 
-1.0.2:
+1.0.3:
 - Added: Flush.
 
 1.0.2:
