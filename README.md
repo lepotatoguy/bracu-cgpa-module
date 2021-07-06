@@ -21,6 +21,8 @@ Email: hello@joyantamondal.com
 - Template of Excel File (Read from PC)
 ![Template of Excel File (Read from PC)](https://i.postimg.cc/1R7q78nt/getfrompc.png)
 
+- Flush Info
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install bracu_cgpa_calc.
